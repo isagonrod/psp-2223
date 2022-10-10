@@ -29,3 +29,8 @@ Repositorio creado para guardar las actividades y proyectos de clase relacionado
 2. Copiar la dirección que aparece.
 3. Abrir terminal (o PowerShell) y situarnos en la carpeta donde vamos a clonar el repositorio. Este paso también se puede hacer desde el terminal del propio IDE.
 4. `$ git clone "dirección copiada de github"`
+
+## Subir archivos a GitHub
+1. `$ git add <fichero>`
+2. `$ git commit -m "<mensaje>"`
+3. `$ git push`
