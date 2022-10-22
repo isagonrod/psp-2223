@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (punto 5)">
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/Calculadora.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/CalculadoraImplService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/ObjectFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/Operation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/OperationResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/package-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/CalculadoraConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/CalculadoraImplService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/OperationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/package-info.java" afterDir="false" />
+    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/iesvi/ws/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/iesvi/ws/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666429985239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)">
+      <created>1666437728371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666437728371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +128,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)" />
+    <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
