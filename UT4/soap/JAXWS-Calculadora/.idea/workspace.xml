@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)">
+    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (punto 5)">
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/Calculadora.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/CalculadoraImplService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/ObjectFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/Operation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/OperationResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org/iesvi/ws/package-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/CalculadoraConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/CalculadoraImplService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/OperationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/iesvi/ws/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/iesvi/ws/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/iesvi/ws/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +53,30 @@
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\2022-2023_DAM\PSP\psp-2223\UT4\soap\JAXWS-Calculadora\src\org\iesvi\ws" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CalculadoraConsumer">
+    <configuration name="CalculadoraConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.iesvi.ws.CalculadoraConsumer" />
+      <module name="JAXWS-Calculadora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvi.ws.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculadoraPublish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.iesvi.ws.CalculadoraPublish" />
       <module name="JAXWS-Calculadora" />
@@ -61,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculadoraConsumer" />
         <item itemvalue="Application.CalculadoraPublish" />
       </list>
     </recent_temporary>
@@ -103,5 +135,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)" />
     <option name="LAST_COMMIT_MESSAGE" value="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
