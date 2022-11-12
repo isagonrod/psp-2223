@@ -41,17 +41,29 @@ Intentará encontrar el IDE instalado, si no lo encuentra por sí mismo, se puls
 
 ## Spring Starter Project
 1. Creamos un nuevo proyecto de Spring.
-img1
+
+![img1](https://user-images.githubusercontent.com/98974760/201468921-bb7d70a8-5eea-4ee5-9230-f87973f44c8f.PNG)
+
 2. Añadimos las dependencias Lombok y Spring Web.
-img2
+
+![img2](https://user-images.githubusercontent.com/98974760/201468937-5faf989a-7f60-4fc6-8e92-817a95e6f4e6.PNG)
+
 3. Creamos una clase Persona de ejemplo y observamos cómo Lombok inyecta los métodos getters, setters, etc. gracias a las anotaciones @Data, @AllArgsConstructor y @NoArgsConstructor.
-img3
+
+![img3](https://user-images.githubusercontent.com/98974760/201468944-20d131af-b5bc-4a7a-93b9-f1b301adb8f7.PNG)
+
 4. Creamos una clase Application, que será la principal (donde estará el main), con las siguientes anotciones:
 	- **@SpringBootApplication**: Ésta engloba otras anotaciones, como @Target(value={TYPE}), @SpringBootConfiguration, @EnableAutoConfiguration (que habilita el contexto para acceder a los beans), @ComponentScan (que busca los beans escaneando), @Retention(value=RUNTIME), @Documented y @Inherited.
 	- **@Bean**: Anotación utilizada en un método concreto para crear una instancia del bean devuelto por el mismo, la cual va a ser gestionada por el contenedor de IoC de Spring. 
-	img4
-	Si se comenta esta anotación, Spring no gestionará el objeto devuelto por el método, por lo que se ejecutaría el código del método, y la ejecución de la aplicación mostraría que no se ejecuta el método.
-	img5
-	Si no se comenta la anotación @Bean, Spring gestiona el bean y, al tratarse de una implementación de CommandLineRunner, se ejecutaría sin problema.
+
+![img4](https://user-images.githubusercontent.com/98974760/201468948-ddc32f5a-c9d9-478a-b3d5-2d6cb4a67a29.PNG)
+	
+Si se comenta esta anotación, Spring no gestionará el objeto devuelto por el método, por lo que se ejecutaría el código del método, y la ejecución de la aplicación mostraría que no se ejecuta el método.
+
+![img5](https://user-images.githubusercontent.com/98974760/201468956-269192c1-676f-4eae-af56-127351226186.PNG)
+	
+Si no se comenta la anotación @Bean, Spring gestiona el bean y, al tratarse de una implementación de CommandLineRunner, se ejecutaría sin problema.
+
 5. Ejecutamos el proyecto, con la anotación @Bean descomentada, y observamos que, por un lado, se ha ejecutado el método lombokTest y por otro lado, están operativos los métodos constructores (sin argumentos y con todos los argumentos) de nuestra clase Persona, y también los métodos toString() y equals().
-img6
+
+![img6](https://user-images.githubusercontent.com/98974760/201468959-ce5885d6-b31a-4d42-8abe-6e946e41eb94.PNG)
