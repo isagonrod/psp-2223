@@ -67,3 +67,15 @@ Si no se comenta la anotación @Bean, Spring gestiona el bean y, al tratarse de 
 5. Ejecutamos el proyecto, con la anotación @Bean descomentada, y observamos que, por un lado, se ha ejecutado el método lombokTest y por otro lado, están operativos los métodos constructores (sin argumentos y con todos los argumentos) de nuestra clase Persona, y también los métodos toString() y equals().
 
 ![img6](https://user-images.githubusercontent.com/98974760/201468959-ce5885d6-b31a-4d42-8abe-6e946e41eb94.PNG)
+
+## Soporte para REST
+Spring Boot nos ofrece un soporte específico para REST con anotaciones como **@RestController**, que nos permite tener una combinación de @Controller y @ResponseBody, es decir, se modifica el mecanismo de renderización de la vista y, en lugar de redirigirnos a una plantilla Thymeleaf, JSP..., se devuelve directamente el contenido que se envía al cliente.<br>
+El **HttpMessageConverter** es un tipo de Beans especial que se encarga de formatear el contenido que se le entregará al cliente. Al incluir la dependecia _starter web_, se añadirán algunas librerías (entre ellas Jackson2) y algunos conversores, como puede ser **MappingJackson[2]HttpMessageConverter** que lo que hace es convertir una clase Java en una cadena Json.
+
+### Clases que se utilizarán en el curso
+- **HttpEntity<T>**: representa una petición o respuesta HTTP. Tiene dos concreciones: **RequestEntity<T>** y **ResponseEntity<T>** (esta última añade el código de estado (_HttpStatus_)).
+- **MediaType**: subclase de MIME. Tiene un listado de constantes.
+- **HttpHeaders**: representa los encabezados de una petición o de una respuesta.
+	
+### APIs externas
+Spring también te permite construir una API REST que llama a otra API externa, mediante la clase **RestTemplate**, que nos permitirá hacer peticiones de todo tipo y aprovecha los diferentes _converters_ que se han explicado antes.
