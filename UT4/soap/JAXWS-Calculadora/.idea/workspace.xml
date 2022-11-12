@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)">
+    <list default="true" id="839749c3-9170-4cda-83bc-e6bfc5e78918" name="Changes" comment="UT4.SOAP: Ejercicio 6. Calculadora (punto 8)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2022-2023_DAM\PSP\psp-2223\UT4\soap\JAXWS-Calculadora\src\org\iesvi\ws" />
@@ -93,6 +93,9 @@
       <option name="presentableId" value="Default" />
       <updated>1666429268862</updated>
       <workItem from="1666429270405" duration="2403000" />
+      <workItem from="1666531476649" duration="701000" />
+      <workItem from="1667025215291" duration="32000" />
+      <workItem from="1667137482682" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)">
       <created>1666429985239</created>
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666437728371</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UT4.SOAP: Ejercicio 6. Calculadora (punto 8)">
+      <created>1666440305473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666440305473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +139,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (puntos del 1 al 4)" />
     <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT4.SOAP: Ejercicio 6. Calculadora (puntos 6 y 7)" />
+    <MESSAGE value="UT4.SOAP: Ejercicio 6. Calculadora (punto 8)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT4.SOAP: Ejercicio 6. Calculadora (punto 8)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
