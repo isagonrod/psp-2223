@@ -69,3 +69,11 @@ ProductoController
 
 
 ## Desarrollo de un CRUD sobre una entidad. Versión 2
+Tomando el ejemplo anterior (estructura_rutas), y las clases ya implementadas con sus anotaciones correspondientes, hay otra serie de clases que necesitamos añadirle. Estas son:
+- **ResponseEntity<T>**: Nos permite manejar de una forma más conveniente la respuesta que enviamos al cliente. Hereda de _HttpEntity<T>_. Nos permite indicar el código de respuesta, qué se envía en el cuerpo, responder peticiones sin el mismo, etc.
+
+Por tanto, el ejemplo anterior lo modificaremos añadiendo algunas funcionalidades al controlador, para que aparezcan los códigos de retorno adecuados:
+- **@GetMapping**: Devolveremos 200 OK si localizamos el recurso; si no, devolveremos 404 Not Found.
+- **@PostMapping**: Devolveremos 201 Created.
+- **@PutMapping**: Devolveremos 200 OK si localizamos y modificamos el recurso; si no, devolveremos 404 Not Found.
+- **@DeleteMapping**: Devolveremos 204 No Content.

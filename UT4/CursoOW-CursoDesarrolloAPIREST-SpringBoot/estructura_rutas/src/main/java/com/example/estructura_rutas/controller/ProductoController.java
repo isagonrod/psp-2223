@@ -3,6 +3,8 @@ package com.example.estructura_rutas.controller;
 import com.example.estructura_rutas.modelo.Producto;
 import com.example.estructura_rutas.modelo.ProductoRepositorio;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,33 +17,44 @@ public class ProductoController {
     /**
      * Obtenemos una lista de todos los productos
      *
-     * @return la lista de productos encontrados en el repositorio
+     * @return 200 OK si obtiene resultados de la búsqueda, o un 404 Not Found si no es así.
      */
     @GetMapping("/producto/")
-    public List<Producto> obtenerTodo() {
-        return productoRepositorio.findAll();
+    public ResponseEntity<?> obtenerTodo() {
+        List<Producto> result = productoRepositorio.findAll();
+        if (result.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        } else {
+            return ResponseEntity.ok(result);
+        }
     }
 
     /**
      * Obtenemos un producto en base a su ID
      *
      * @param id del producto
-     * @return el producto encontrado o null si no encuentra el producto
+     * @return 200 OK si obtiene resultados de la búsqueda, o un 404 Not Found si no es así.
      */
     @GetMapping("/producto/{id}")
-    public Producto obtenerUno(@PathVariable Long id) {
-        return productoRepositorio.findById(id).orElse(null);
+    public ResponseEntity<?> obtenerUno(@PathVariable Long id) {
+        Producto result = productoRepositorio.findById(id).orElse(null);
+        if (result == null) {
+            return ResponseEntity.notFound().build();
+        } else {
+            return ResponseEntity.ok(result);
+        }
     }
 
     /**
      * Insertamos un nuevo producto
      *
      * @param nuevo producto
-     * @return producto introducido
+     * @return 201 Created si se ha insertado con éxito el nuevo producto
      */
     @PostMapping("/producto")
-    public Producto nuevoProducto(@RequestBody Producto nuevo) {
-        return productoRepositorio.save(nuevo);
+    public ResponseEntity<Producto> nuevoProducto(@RequestBody Producto nuevo) {
+        Producto saved = productoRepositorio.save(nuevo);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
     /**
@@ -49,32 +62,26 @@ public class ProductoController {
      *
      * @param editar producto
      * @param id del producto
-     * @return producto editado
+     * @return 200 OK si se edita correctamente, o un 404 Not Found si no es así.
      */
     @PutMapping("/producto/{id}")
-    public Producto editarProducto(@RequestBody Producto editar, @PathVariable Long id) {
-        if (productoRepositorio.existsById(id)) {
-            editar.setId(id);
-            return productoRepositorio.save(editar);
-        } else {
-            return null;
-        }
+    public ResponseEntity<?> editarProducto(@RequestBody Producto editar, @PathVariable Long id) {
+        return productoRepositorio.findById(id).map(p -> {
+            p.setNombre(editar.getNombre());
+            p.setPrecio(editar.getPrecio());
+            return ResponseEntity.ok(productoRepositorio.save(p));
+        }).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     /**
      * Borra un producto del catálogo en base a su id
      *
      * @param id del producto
-     * @return producto borrado
+     * @return 202 No Content si se ha borrado con éxito el producto
      */
     @DeleteMapping("/producto/{id}")
-    public Producto borrarProducto(@PathVariable Long id) {
-        if (productoRepositorio.existsById(id)) {
-            Producto result = productoRepositorio.findById(id).get();
-            productoRepositorio.deleteById(id);
-            return result;
-        } else {
-            return null;
-        }
+    public ResponseEntity<?> borrarProducto(@PathVariable Long id) {
+        productoRepositorio.deleteById(id);
+        return ResponseEntity.noContent().build();
     }
 }
