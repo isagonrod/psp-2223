@@ -32,7 +32,9 @@ Hay diferentes alternativas:
 	<br>`$ mvn install`
 	<br>`$ mvn spring-boot:run`
 3. Desde Postman se puede hacer la petición y ver tanto las cabeceras como el cuerpo de la respuesta en diferentes formatos, e incluso guardarla en un fichero.
-img1 y img2
+
+![img1](https://user-images.githubusercontent.com/98974760/201521174-3242df62-ac03-4889-84ca-dbfcf1ab96da.PNG)
+![img2](https://user-images.githubusercontent.com/98974760/201521182-21e42c6c-6db6-4386-bfd4-1b575ef5ef61.PNG)
 
 ## Desarrollo de un CRUD sobre una entidad. Versión 1 (estructura_rutas)
 En el siguiente ejemplo se hará una API para la gestión de un conjunto de productos simple. Como campos van a tener un id, el nombre de producto y el precio. También vamos a crear un repositorio en el que insertaremos unos datos de ejemplo.
@@ -49,12 +51,21 @@ Para hacer el mapeo de las rutas de nuestro controlador, con las diferentes oper
 
 ### Clases
 Application
-img3
+
+![img3](https://user-images.githubusercontent.com/98974760/201521192-179c4af5-5387-4e6b-b846-8443402edc47.PNG)
+
 Producto
-img4
+
+![img4](https://user-images.githubusercontent.com/98974760/201521203-d6509e9e-34f8-4ff5-a0c8-690fbebb2658.PNG)
+
 ProductoRepository
-img5
+
+![img5](https://user-images.githubusercontent.com/98974760/201521209-0dceb72f-8f3d-410c-af57-e7753ea64004.PNG)
+
 ProductoController
-img6
+
+![img6](https://user-images.githubusercontent.com/98974760/201521211-a72af622-cee8-4739-8d8e-ffcacd16117d.PNG)
+
+
 
 ## Desarrollo de un CRUD sobre una entidad. Versión 2
