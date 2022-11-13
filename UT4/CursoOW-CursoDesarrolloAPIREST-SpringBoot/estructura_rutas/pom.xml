@@ -11,7 +11,7 @@
     <groupId>com.example.estructura_rutas</groupId>
     <artifactId>estructura_rutas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>09_EstructuraRutasCompleto</name>
+    <name>estructura_rutas</name>
     <description>Ejemplo de métodos crud en un API REST</description>
 
     <properties>

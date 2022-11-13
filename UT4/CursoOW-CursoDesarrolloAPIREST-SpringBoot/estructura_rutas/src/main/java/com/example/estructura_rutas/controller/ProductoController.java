@@ -3,8 +3,9 @@ package com.example.estructura_rutas.controller;
 import com.example.estructura_rutas.modelo.Producto;
 import com.example.estructura_rutas.modelo.ProductoRepositorio;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.validator.constraints.ParameterScriptAssert;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -12,14 +13,24 @@ public class ProductoController {
     private final ProductoRepositorio productoRepositorio;
 
     /**
+     * Obtenemos una lista de todos los productos
+     *
+     * @return la lista de productos encontrados en el repositorio
+     */
+    @GetMapping("/producto/")
+    public List<Producto> obtenerTodo() {
+        return productoRepositorio.findAll();
+    }
+
+    /**
      * Obtenemos un producto en base a su ID
      *
      * @param id del producto
-     * @return el producto encontrado
+     * @return el producto encontrado o null si no encuentra el producto
      */
     @GetMapping("/producto/{id}")
     public Producto obtenerUno(@PathVariable Long id) {
-        return null;
+        return productoRepositorio.findById(id).orElse(null);
     }
 
     /**
@@ -30,7 +41,7 @@ public class ProductoController {
      */
     @PostMapping("/producto")
     public Producto nuevoProducto(@RequestBody Producto nuevo) {
-        return null;
+        return productoRepositorio.save(nuevo);
     }
 
     /**
@@ -42,7 +53,12 @@ public class ProductoController {
      */
     @PutMapping("/producto/{id}")
     public Producto editarProducto(@RequestBody Producto editar, @PathVariable Long id) {
-        return null;
+        if (productoRepositorio.existsById(id)) {
+            editar.setId(id);
+            return productoRepositorio.save(editar);
+        } else {
+            return null;
+        }
     }
 
     /**
@@ -53,6 +69,12 @@ public class ProductoController {
      */
     @DeleteMapping("/producto/{id}")
     public Producto borrarProducto(@PathVariable Long id) {
-        return null;
+        if (productoRepositorio.existsById(id)) {
+            Producto result = productoRepositorio.findById(id).get();
+            productoRepositorio.deleteById(id);
+            return result;
+        } else {
+            return null;
+        }
     }
 }

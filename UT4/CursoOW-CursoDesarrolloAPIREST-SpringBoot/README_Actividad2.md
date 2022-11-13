@@ -33,3 +33,28 @@ Hay diferentes alternativas:
 	<br>`$ mvn spring-boot:run`
 3. Desde Postman se puede hacer la petición y ver tanto las cabeceras como el cuerpo de la respuesta en diferentes formatos, e incluso guardarla en un fichero.
 img1 y img2
+
+## Desarrollo de un CRUD sobre una entidad. Versión 1 (estructura_rutas)
+En el siguiente ejemplo se hará una API para la gestión de un conjunto de productos simple. Como campos van a tener un id, el nombre de producto y el precio. También vamos a crear un repositorio en el que insertaremos unos datos de ejemplo.
+Para hacer el mapeo de las rutas de nuestro controlador, con las diferentes operaciones CRUD, necesitamos hacer una determinada ruta para cada una de las operaciones dentro del controlador.
+
+- **Read**: La operación de obtención de datos se hará a través de la petición GET, es decir, métodos del controlador que irán anotados con @GetMapping.
+- **Create**: Para crear un producto lo que haremos será una petición de tipo POST (@PostMapping).
+- **Update**: Para actualizar o editar un producto ya existente, utilizaremos el verbo PUT (@PutMapping).
+- **Delete**: Para eliminar un producto, haremos uso de DELETE (@DeleteMapping).
+
+### Algunas anotaciones
+- **@RequestBody**: Permite inyectar el cuerpo de la petición en un objeto.
+- **@PathVariable**: Nos permite inyectar un fragmento de la URL en una variable.
+
+### Clases
+Application
+img3
+Producto
+img4
+ProductoRepository
+img5
+ProductoController
+img6
+
+## Desarrollo de un CRUD sobre una entidad. Versión 2
