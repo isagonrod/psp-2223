@@ -68,6 +68,12 @@ Si no se comenta la anotación @Bean, Spring gestiona el bean y, al tratarse de 
 
 ![img6](https://user-images.githubusercontent.com/98974760/201468959-ce5885d6-b31a-4d42-8abe-6e946e41eb94.PNG)
 
+### Anotaciones e Intefaces utilizadas
+- **@Data**: es la anotación de acceso directo que agrupa las características de @ToString, @EqualsAndHashCode, @Getter, @Setter y @RequiredArgsConstructor juntas.
+- **@SpringBootApplication**: Anotación que engloba otras arriba mencionadas (en el punto 4 de este mismo apartado).
+- **@Bean**: Anotación que sirve para crear una instancia del bean devuelto por un método, la cual va a ser gesionada por el contenedor de IoC de Spring.
+- **CommandLineRunner**: Interfaz usada para indicar que un bean debería ejecutarse cuando esté contenido dentro de una aplicación Spring. Es una interfaz funcional (@FunctionalInterface), siendo _run_ el método abstracto a implementar con código. La sintaxis de este método es: _run(String... args)_; es decir, recibe un número variable de cadenas como parámetros de entrada. Como es una interfaz funcional, el bean debe crear un objeto de esta clase e implementar su método _run_, cuyo código es el devuelvo por _return_ expresado como expresión lambda.
+
 ## Soporte para REST
 Spring Boot nos ofrece un soporte específico para REST con anotaciones como **@RestController**, que nos permite tener una combinación de @Controller y @ResponseBody, es decir, se modifica el mecanismo de renderización de la vista y, en lugar de redirigirnos a una plantilla Thymeleaf, JSP..., se devuelve directamente el contenido que se envía al cliente.<br>
 El **HttpMessageConverter** es un tipo de Beans especial que se encarga de formatear el contenido que se le entregará al cliente. Al incluir la dependecia _starter web_, se añadirán algunas librerías (entre ellas Jackson2) y algunos conversores, como puede ser **MappingJackson[2]HttpMessageConverter** que lo que hace es convertir una clase Java en una cadena Json.
