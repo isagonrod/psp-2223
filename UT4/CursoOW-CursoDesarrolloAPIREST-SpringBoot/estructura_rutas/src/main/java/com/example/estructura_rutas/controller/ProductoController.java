@@ -77,11 +77,15 @@ public class ProductoController {
      * Borra un producto del catálogo en base a su id
      *
      * @param id del producto
-     * @return 202 No Content si se ha borrado con éxito el producto
+     * @return 202 No Content si se ha borrado con éxito el producto y 404 Not Found si no se ha encontrado
      */
     @DeleteMapping("/producto/{id}")
     public ResponseEntity<?> borrarProducto(@PathVariable Long id) {
-        productoRepositorio.deleteById(id);
-        return ResponseEntity.noContent().build();
+        if (productoRepositorio.existsById(id)) {
+            productoRepositorio.deleteById(id);
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
