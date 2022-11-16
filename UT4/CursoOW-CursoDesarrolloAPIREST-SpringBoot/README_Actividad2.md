@@ -95,3 +95,8 @@ Se puede implementar DTO de varias formas:
 - JsonViews: A través de anotaciones, un mismo objeto puede devolver más o menos datos.
 
 ### DTO con ModelMapper
+Nos evita código muy repetitivo, ya que facilita la creación de DTO mediante asignación dinámica. Para usar _ModelMapper_ solo hay que añadir al pom.xml la dependencia correspondiente con la versión más actualizada que se quisiera tener. Como configuración básica, se puede crear un Bean que nos devuelva el ModelMapper para poder utilizarlo donde lo necesitemos.
+
+Para hacer la transformación nos creamos un componente independiente, que inyectaremos para usar donde haga falta. Y esto lo utilizaremos dentro de un controlador.
+
+Para dicha transformación, tan solo basta con utilizar el método _map_ cuyos parámetros de entrada son dos: el producto y la clase a la que se quiere transformar (ProductoDTO.class).

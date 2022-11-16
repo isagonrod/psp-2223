@@ -1,18 +1,19 @@
 package com.example.estructura_rutas.controller;
 
+import com.example.estructura_rutas.dto.CreateProductoDTO;
+import com.example.estructura_rutas.dto.ProductoDTO;
 import com.example.estructura_rutas.dto.converter.ProductoDTOConverter;
 import com.example.estructura_rutas.modelo.Categoria;
 import com.example.estructura_rutas.modelo.CategoriaRepositorio;
 import com.example.estructura_rutas.modelo.Producto;
 import com.example.estructura_rutas.modelo.ProductoRepositorio;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
@@ -32,7 +33,10 @@ public class ProductoController {
         if (result.isEmpty()) {
             return ResponseEntity.notFound().build();
         } else {
-            return ResponseEntity.ok(result);
+            List<ProductoDTO> dtoList = result.stream()
+                    .map(productoDTOConverter::converToDto)
+                    .collect(Collectors.toList());
+            return ResponseEntity.ok(dtoList);
         }
     }
 
@@ -59,7 +63,7 @@ public class ProductoController {
      * @return 201 Created si se ha insertado con éxito el nuevo producto
      */
     @PostMapping("/producto")
-    public ResponseEntity<Producto> nuevoProducto(@RequestBody Producto nuevo) {
+    public ResponseEntity<Producto> nuevoProducto(@RequestBody CreateProductoDTO nuevo) {
         Producto nuevoProducto = new Producto();
         nuevoProducto.setNombre(nuevo.getNombre());
         nuevoProducto.setPrecio(nuevo.getPrecio());
