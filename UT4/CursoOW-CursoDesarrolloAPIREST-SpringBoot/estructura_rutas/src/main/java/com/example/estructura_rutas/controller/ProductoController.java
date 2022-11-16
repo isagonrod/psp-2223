@@ -1,8 +1,13 @@
 package com.example.estructura_rutas.controller;
 
+import com.example.estructura_rutas.dto.converter.ProductoDTOConverter;
+import com.example.estructura_rutas.modelo.Categoria;
+import com.example.estructura_rutas.modelo.CategoriaRepositorio;
 import com.example.estructura_rutas.modelo.Producto;
 import com.example.estructura_rutas.modelo.ProductoRepositorio;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +18,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductoController {
     private final ProductoRepositorio productoRepositorio;
+    private final CategoriaRepositorio categoriaRepositorio;
+    private final ProductoDTOConverter productoDTOConverter;
 
     /**
      * Obtenemos una lista de todos los productos
@@ -53,8 +60,12 @@ public class ProductoController {
      */
     @PostMapping("/producto")
     public ResponseEntity<Producto> nuevoProducto(@RequestBody Producto nuevo) {
-        Producto saved = productoRepositorio.save(nuevo);
-        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+        Producto nuevoProducto = new Producto();
+        nuevoProducto.setNombre(nuevo.getNombre());
+        nuevoProducto.setPrecio(nuevo.getPrecio());
+        Categoria categoria = categoriaRepositorio.findById(nuevo.getCategoriaId()).orElse(null);
+        nuevoProducto.setCategoria(categoria);
+        return ResponseEntity.status(HttpStatus.CREATED).body(productoRepositorio.save(nuevoProducto));
     }
 
     /**

@@ -77,3 +77,21 @@ Por tanto, el ejemplo anterior lo modificaremos añadiendo algunas funcionalidad
 - **@PostMapping**: Devolveremos 201 Created.
 - **@PutMapping**: Devolveremos 200 OK si localizamos y modificamos el recurso; si no, devolveremos 404 Not Found.
 - **@DeleteMapping**: Devolveremos 204 No Content.
+
+
+
+## Desarrollo de un CRUD sobre una entidad. Versión 3
+Las **Entidades** son clases Java con algunas anotaciones más, cumplen una serie de requisitos y se encargan de modelar nuestros objetos en la capa lógica de negocio. Según los expertos, es buena práctica no usar estas entidades en el resto de capas. Estas se dejarán para la lógica de negocio, y para otras capas se utilizarán otras clases, como por ejemplo las ***Data Transfer Object (DTO)***.
+
+Estas DTO son objectos POJO que agrupan datos de la capa de negocio. Pueden tener parte de los datos de una sola entidad o de más de una, o bien aglutinar todos los datos de varias entidades. A veces se les conoce como VO (_Value Object_). Están pensadas para aligerar las transacciones entre cliente/servidor.
+
+Las características de un DTO es que va a ser una clase muy sencilla, va a ser un objeto plano que no va a tener nada de lógica de negocio (puede tener getter, setter y los constructores necesarios para facilitar el trabajo), tiene que ser serializable para que pueda viajar a través de la red (aunque esto no es extricamente obligatorio).
+
+Esta clase DTO se utilizará cuando no queramos obtener toda la información de alguna clase, sino solo algunos datos, o incluso datos convinados de varias clases. Se hará, por ejemplo, en los métodos GET, para obtener así los datos deseados, pudiendo haber más de un DTO distinto para una sola entidad, dependiendo del tipo de consulta que se vaya a hacer.
+
+Se puede implementar DTO de varias formas:
+- Manualmente: Instanciamos el nuevo objeto y, mediante los getter y los setter, vamos asignando los datos. Con la anotación @Builder de Lombok se nos genera un _builder_ en el que, a través de métodos encadenados, podemos construir un objeto.
+- ModelMapper: Librería que hace el trabajo de transformar una clase en otra.
+- JsonViews: A través de anotaciones, un mismo objeto puede devolver más o menos datos.
+
+### DTO con ModelMapper
