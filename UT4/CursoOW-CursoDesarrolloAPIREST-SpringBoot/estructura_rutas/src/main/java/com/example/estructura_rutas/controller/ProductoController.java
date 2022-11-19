@@ -2,6 +2,7 @@ package com.example.estructura_rutas.controller;
 
 import com.example.estructura_rutas.dto.CreateProductoDTO;
 import com.example.estructura_rutas.dto.ProductoDTO;
+import com.example.estructura_rutas.dto.UpdateProductoDTO;
 import com.example.estructura_rutas.dto.converter.ProductoDTOConverter;
 import com.example.estructura_rutas.modelo.Categoria;
 import com.example.estructura_rutas.modelo.CategoriaRepositorio;
@@ -80,7 +81,7 @@ public class ProductoController {
      * @return 200 OK si se edita correctamente, o un 404 Not Found si no es así.
      */
     @PutMapping("/producto/{id}")
-    public ResponseEntity<?> editarProducto(@RequestBody Producto editar, @PathVariable Long id) {
+    public ResponseEntity<?> editarProducto(@RequestBody UpdateProductoDTO editar, @PathVariable Long id) {
         return productoRepositorio.findById(id).map(p -> {
             p.setNombre(editar.getNombre());
             p.setPrecio(editar.getPrecio());
