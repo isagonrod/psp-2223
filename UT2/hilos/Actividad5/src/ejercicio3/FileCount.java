@@ -43,8 +43,9 @@ public class FileCount implements Runnable {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line = br.readLine();
             int countLetters = 0;
-            while (br.readLine() != null) {
-                countLetters = line.replace(" ", "").length();
+            while (line != null) {
+                countLetters += line.replace(" ", "").length();
+                line = br.readLine();
             }
             System.out.println("Número de caracteres: " + countLetters);
         } catch (IOException ex) {
