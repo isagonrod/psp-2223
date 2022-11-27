@@ -13,7 +13,7 @@ public class HiloEjemplo2 extends Thread {
     public static void main(String[] args) {
         Thread.currentThread().setName("Principal"); // nombre del main
         System.out.println(Thread.currentThread().getName());
-        System.out.println(Thread.currentThread().toString());
+        System.out.println(Thread.currentThread());
 
         HiloEjemplo2 hilo = null;
 
@@ -22,7 +22,7 @@ public class HiloEjemplo2 extends Thread {
             hilo.setName("Hilo " + i);  // damos nombre al hilo
             hilo.setPriority(i + 1);    // damos prioridad
             hilo.start();               // iniciar hilo
-            System.out.println("Información del " + hilo.getName() + ": " + hilo.toString());
+            System.out.println("Información del " + hilo.getName() + ": " + hilo);
         }
 
         System.out.println("3 hilos creados...");
