@@ -53,7 +53,8 @@ public class FileCount implements Runnable {
     }
 
     public static void main(String[] args) {
-        new Thread(new FileCount("src/textFiles/file1.txt")).start();
-        new Thread(new FileCount("src/textFiles/file2.txt")).start();
+        for (String arg : args) {
+            new Thread(new FileCount(arg)).start();
+        }
     }
 }
