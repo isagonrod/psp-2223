@@ -2,6 +2,10 @@ package Actividad1.CompartirInf2;
 
 import Actividad1.Contador;
 
+/* CompartirInf2
+ * Idem al anterior pero creando un bloque de código sincronizado.
+ */
+
 public class CompartirInf2 {
     public static void main(String[] args) {
         Contador cont = new Contador(100);
