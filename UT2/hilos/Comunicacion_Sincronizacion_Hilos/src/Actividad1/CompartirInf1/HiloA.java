@@ -1,4 +1,6 @@
-package Actividad1;
+package Actividad1.CompartirInf1;
+
+import Actividad1.Contador;
 
 public class HiloA extends Thread {
     private Contador contador;
@@ -11,11 +13,11 @@ public class HiloA extends Thread {
     public void run() {
         for (int i = 0; i < 300; i++) {
             contador.incrementa();
-//            try {
-//                sleep(100);
-//            } catch (InterruptedException ex) {
-//                ex.printStackTrace();
-//            }
+            try {
+                sleep(100);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
             System.out.println(getName() + " contador valor " + contador.valor());
         }
     }

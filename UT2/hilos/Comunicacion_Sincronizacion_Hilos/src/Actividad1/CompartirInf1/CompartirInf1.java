@@ -1,4 +1,6 @@
-package Actividad1;
+package Actividad1.CompartirInf1;
+
+import Actividad1.Contador;
 
 public class CompartirInf1 {
     public static void main(String[] args) {
