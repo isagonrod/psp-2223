@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26d5cff1-ba0c-4dd9-b87d-3271ac984489" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Estados_Gestion_Hilos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actividad2_4/MiHilo_actividad2_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actividad2_4/SolicitaSuspender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actividad2_4/actividad2_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio8/Ejercicio8Hilos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio8/Hilo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio8/SolicitarSuspender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio9/Ejercicio9HilosInterrumpir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio9/HiloInterrumpir.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IOeUzJ9Xg1tAkUjjjyCJLaiGdk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Ejercicio8Hilos">
+    <configuration name="Ejercicio8Hilos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejercicio8.Ejercicio8Hilos" />
+      <module name="Estados_Gestion_Hilos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejercicio8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actividad2_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="actividad2_4.actividad2_4" />
+      <module name="Estados_Gestion_Hilos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="actividad2_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ejercicio8Hilos" />
+        <item itemvalue="Application.actividad2_4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26d5cff1-ba0c-4dd9-b87d-3271ac984489" name="Changes" comment="" />
+      <created>1670057080058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670057080058</updated>
+      <workItem from="1670057081875" duration="5236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
