@@ -1,7 +1,5 @@
 package ejercicio9;
 
-import ejercicio8.Hilo;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -9,6 +7,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
+/* COMPRUEBA TU APRENDIZAJE - Ejercicio 9
+ * Realiza una pantalla gráfica para iniciar dos hilos y finalizar su ejecución usando interrupciones.
+ * Se deben mostrar varios botones.
+ * El botón "Comenzar Proceso" crea los dos hilos y lanza su ejecución, los hilos sólo se crean una vez, el botón se
+ * desactivará al pulsarle.
+ * Cada hilo tendrá su botón para interrumpir su ejecución.
+ * Se debe mostrar un mensaje en pantalla que indique si el hilo está corriendo o ha sido interrumpida su ejecución.
+ * El botón "Finalizar Proceso" detiene los dos hilos y muestra en consola el valor final de cada contador.
+ * El cierre de la ventana hace lo mismo.
+ * El constructor del hilo recibe dos parámetros, uno con el nombre del hilo y el segundo la cantidad de milisegundos
+ * que permanece el hilo dormido.
+ */
 
 public class Ejercicio9HilosInterrumpir extends JFrame {
     private static final long serialVersionUID = 1L;
@@ -68,18 +79,15 @@ public class Ejercicio9HilosInterrumpir extends JFrame {
         contentPane.add(btnComenzarProceso);
 
         JButton btnComenzar = new JButton("Comenzar Proceso");
-        btnComenzar.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        btnComenzar.addActionListener(e -> {
 
-                hilo1.start();
-                hilo2.start();
+            hilo1.start();
+            hilo2.start();
 
-                labelHilo1.setText("Hilo1 Corriendo");
-                labelHilo2.setText("Hilo2 Corriendo");
+            labelHilo1.setText("Hilo1 Corriendo");
+            labelHilo2.setText("Hilo2 Corriendo");
 
-                btnComenzar.setEnabled(false);
-
-            }
+            btnComenzar.setEnabled(false);
 
         });
         btnComenzar.setBounds(138, 23, 178, 23);
@@ -94,22 +102,18 @@ public class Ejercicio9HilosInterrumpir extends JFrame {
         contador1.setColumns(10);
 
         JButton Suspender = new JButton("Interrumpir");
-        Suspender.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                hilo1.interrumpirHilo();
-                labelHilo1.setText("Hilo1 interrumpido");
+        Suspender.addActionListener(arg0 -> {
+            hilo1.interrumpirHilo();
+            labelHilo1.setText("Hilo1 interrumpido");
 
-            }
         });
         Suspender.setBounds(51, 96, 133, 23);
         contentPane.add(Suspender);
 
         JButton Suspender2 = new JButton("Interrumpir");
-        Suspender2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                hilo2.interrumpirHilo();
-                labelHilo2.setText("Hilo2 interrumpido");
-            }
+        Suspender2.addActionListener(arg0 -> {
+            hilo2.interrumpirHilo();
+            labelHilo2.setText("Hilo2 interrumpido");
         });
         Suspender2.setBounds(259, 96, 133, 23);
         contentPane.add(Suspender2);
@@ -137,12 +141,7 @@ public class Ejercicio9HilosInterrumpir extends JFrame {
         contentPane.add(labelHilo2);
 
         JButton button = new JButton("Finalizar Proceso");
-        button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                finalizarProceso();
-            }
-
-        });
+        button.addActionListener(arg0 -> finalizarProceso());
         button.setBounds(138, 227, 178, 23);
         contentPane.add(button);
 

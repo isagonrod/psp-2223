@@ -8,6 +8,18 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+/* COMPRUEBA TU APRENDIZAJE - Ejercicio 8
+ * Partiendo de la actividad 2.4, realiza la misma operación para suspender y reanudar el hilo, pero ahora se usará
+ * una pantalla gráfica con varios botones y se lanzarán dos hilos.
+ * El botón "Comenzar Proceso" crea los dos hilos y lanza su ejecución, los hilos sólo se crean una vez, el botón se
+ * desactivará al pulsarle.
+ * Cada hilo tendrá su botón para suspenderlo o reanudarlo.
+ * El botón "Finalizar Proceso" detiene los dos hilos y muestra en consola el valor final de cada contador.
+ * El cierre de la ventana hace lo mismo.
+ * El constructor del hilo recibe dos parámetros, uno con el nombre del hilo y el segundo la cantidad de milisegundos
+ * que permanece el hilo dormido.
+ */
+
 public class Ejercicio8Hilos extends JFrame {
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;

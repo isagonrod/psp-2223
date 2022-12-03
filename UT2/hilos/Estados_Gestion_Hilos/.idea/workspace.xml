@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26d5cff1-ba0c-4dd9-b87d-3271ac984489" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Estados_Gestion_Hilos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actividad2_4/MiHilo_actividad2_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actividad2_4/SolicitaSuspender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actividad2_4/actividad2_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio8/Ejercicio8Hilos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio8/Hilo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio8/SolicitarSuspender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio9/Ejercicio9HilosInterrumpir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio9/HiloInterrumpir.java" afterDir="false" />
+    <list default="true" id="26d5cff1-ba0c-4dd9-b87d-3271ac984489" name="Changes" comment="HILOS: Estados y gestión de hilos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio8/Ejercicio8Hilos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio8/Ejercicio8Hilos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio9/Ejercicio9HilosInterrumpir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio9/Ejercicio9HilosInterrumpir.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +83,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670057080058</updated>
-      <workItem from="1670057081875" duration="5236000" />
+      <workItem from="1670057081875" duration="5818000" />
     </task>
+    <task id="LOCAL-00001" summary="HILOS: Estados y gestión de hilos">
+      <created>1670078217725</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670078217725</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="HILOS: Estados y gestión de hilos" />
+    <option name="LAST_COMMIT_MESSAGE" value="HILOS: Estados y gestión de hilos" />
   </component>
 </project>
