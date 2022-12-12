@@ -5,7 +5,7 @@ public class ColaAct {
     private boolean disponible = false;
 
     public synchronized int get() {
-        while (disponible == false) {
+        while (!disponible) {
             try {
                 wait();
             } catch (InterruptedException ex) {
@@ -18,7 +18,7 @@ public class ColaAct {
     }
 
     public synchronized void put(int valor) {
-        while (disponible == true) {
+        while (disponible) {
             try {
                 wait();
             } catch (InterruptedException ex) {
