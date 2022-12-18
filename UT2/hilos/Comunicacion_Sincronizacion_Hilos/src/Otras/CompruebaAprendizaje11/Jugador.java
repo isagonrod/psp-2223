@@ -3,8 +3,8 @@ package Otras.CompruebaAprendizaje11;
 import Util.Teclado;
 
 public class Jugador extends Thread {
-    private int id;
-    private Arbitro arbitro;
+    private final int id;
+    private final Arbitro arbitro;
 
     public Jugador(int idJugador, Arbitro arbitro) {
         this.id = idJugador;

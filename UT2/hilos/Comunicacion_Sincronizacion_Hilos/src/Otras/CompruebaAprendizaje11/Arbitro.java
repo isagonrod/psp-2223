@@ -4,9 +4,9 @@ import java.util.Map;
 
 public class Arbitro {
     private final Map<Integer, Jugador> jugadores;
-    private int numJugadores;
+    private final int numJugadores;
     private int turno;
-    private int numAdivinar;
+    private final int numAdivinar;
     private boolean finJuego = false;
 
     public Arbitro(int numJugadores, Map<Integer, Jugador> jugadores) {
@@ -33,6 +33,7 @@ public class Arbitro {
 
             this.finJuego = false;
             System.out.println("El jugador " + jugadorId + " ha fallado su turno");
+
             synchronized (jugadores.get(this.turno)) {
                 jugadores.get(this.turno).notify();
             }
