@@ -14,11 +14,8 @@ public class Jugador extends Thread {
     }
 
     public void run() {
-        try {
+        do {
             arbitro.jugada(id, Teclado.getInt("Introduce un número para tu jugada: "));
-            wait();
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
+        } while (!arbitro.isFinJuego());
     }
 }
