@@ -2,8 +2,6 @@ package Otras.CompruebaAprendizaje11;
 
 import Util.Teclado;
 
-import java.util.Scanner;
-
 public class Jugador extends Thread {
     private int id;
     private Arbitro arbitro;
@@ -15,7 +13,18 @@ public class Jugador extends Thread {
 
     public void run() {
         do {
-            arbitro.jugada(id, Teclado.getInt("Introduce un número para tu jugada: "));
+            if (arbitro.getTurno() == id) {
+                arbitro.jugada(id, Teclado.getInt("Jugador " + this.id + ", introduce un número para tu jugada: "));
+            }
+            else {
+                synchronized (this) {
+                    try {
+                        this.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
         } while (!arbitro.isFinJuego());
     }
 }

@@ -27,16 +27,19 @@ package Otras.CompruebaAprendizaje11;
 
 import Util.Teclado;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ComprAprend11 {
     public static void main(String[] args) {
         int numJugadores = Teclado.getInt("Número de jugadores: ");
+        Map<Integer, Jugador> jugadores = new HashMap<>();
 
-        Arbitro arbitro = new Arbitro(numJugadores);
-        Jugador jugador;
+        Arbitro arbitro = new Arbitro(numJugadores, jugadores);
 
         for (int i = 0; i < numJugadores; i++) {
-            jugador = new Jugador(i + 1, arbitro);
-            jugador.start();
+            jugadores.put(i + 1, new Jugador(i + 1, arbitro));
+            jugadores.get(i + 1).start();
         }
     }
 }
