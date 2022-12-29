@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sockets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo1/TCPejemplo1Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo1/TCPejemplo1Servidor.java" afterDir="false" />
-    </list>
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,8 +79,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672341568109</updated>
-      <workItem from="1672341569859" duration="731000" />
+      <workItem from="1672341569859" duration="875000" />
     </task>
+    <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
+      <created>1672342436312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672342436312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)" />
   </component>
 </project>
