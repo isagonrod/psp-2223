@@ -1,4 +1,4 @@
-package actividad_3_8;
+package actividad_3_8_part1;
 
 import ejemplo5.Persona;
 import util.Teclado;

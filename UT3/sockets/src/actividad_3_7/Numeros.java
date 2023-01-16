@@ -39,6 +39,10 @@ public class Numeros implements Serializable {
         this.cubo = cubo;
     }
 
+    public Numeros(int numero) {
+        this.numero = numero;
+    }
+
     public Numeros() {
         super();
     }

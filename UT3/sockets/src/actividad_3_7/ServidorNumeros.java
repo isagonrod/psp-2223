@@ -1,5 +1,7 @@
 package actividad_3_7;
 
+import util.Calculadora;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -14,30 +16,26 @@ public class ServidorNumeros {
         System.out.println("Esperando al cliente...");
         Socket cliente = servidor.accept();
 
-        ObjectInputStream inObjeto = new ObjectInputStream(cliente.getInputStream());
-        Numeros numCliente = new Numeros();
-        int num = Integer.parseInt(String.valueOf(inObjeto.readObject()));
-        System.out.println("Recibo: " + num);
+        ObjectInputStream numEnt = new ObjectInputStream(cliente.getInputStream());
 
-        while (num > 0) {
-            ObjectOutputStream outObjeto = new ObjectOutputStream(cliente.getOutputStream());
-            Numeros numServidor = new Numeros(num, calcularCuadrado(numCliente.getNumero()), calcularCubo(numCliente.getNumero()));
-            outObjeto.writeObject(numServidor);
-            System.out.println("Envío: " + numServidor.getNumero() + " -> Cuadrado: " + numServidor.getCuadrado() + ", Cubo: " + numServidor.getCubo());
+        Numeros number = (Numeros) numEnt.readObject();
 
-            inObjeto.close();
-            outObjeto.close();
-            cliente.close();
+        while (number.getNumero() > 0) {
+            System.out.println("Recibo: " + number.getNumero());
 
+            number.setCuadrado(Calculadora.calcularCuadrado(number.getNumero()));
+            number.setCubo(Calculadora.calcularCubo(number.getNumero()));
+
+            ObjectOutputStream numSal = new ObjectOutputStream(cliente.getOutputStream());
+            numSal.writeObject(number);
+            System.out.println("Envío: " + number.getNumero() + " -> Cuadrado: " + number.getCuadrado() + ", Cubo: " + number.getCubo());
+
+            numEnt.close();
+            numSal.close();
+
+            number = (Numeros) numEnt.readObject();
         }
+        cliente.close();
         servidor.close();
-    }
-
-    public static long calcularCuadrado(int num) {
-        return (long) num * num;
-    }
-
-    public static long calcularCubo(int num) {
-        return (long) num * num * num;
     }
 }

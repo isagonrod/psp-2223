@@ -1,5 +1,7 @@
 package actividad_3_7;
 
+import util.Teclado;
+
 import java.io.*;
 import java.net.Socket;
 
@@ -11,28 +13,25 @@ public class ClienteNumeros {
         System.out.println("PROGRAMA CLIENTE INICIADO...");
         Socket cliente = new Socket(host, puerto);
 
-        Numeros numeros = new Numeros();
+        ObjectOutputStream outObjeto = new ObjectOutputStream(cliente.getOutputStream());
 
-        BufferedReader num = (new BufferedReader(new InputStreamReader(System.in)));
-        int number = Integer.parseInt(String.valueOf(num));
+        Numeros numeros = new Numeros(Teclado.getNum("\nNúmero: "));
 
-        while(number > 0) {
-            numeros.setNumero(number);
-
-            ObjectOutputStream numSalida = new ObjectOutputStream(cliente.getOutputStream());
-            numSalida.writeObject(numeros);
+        while (numeros.getNumero() > 0) {
+            outObjeto.writeObject(numeros);
             System.out.println("Envío: " + numeros.getNumero());
 
-            ObjectInputStream numEntrada = new ObjectInputStream(cliente.getInputStream());
-            Numeros numServer = (Numeros) numEntrada.readObject();
-            System.out.println("Recibo: " + numServer.getNumero() + " -> Cuadrado: " + numServer.getCuadrado() + ", Cubo: " + numServer.getCubo());
+            ObjectInputStream inObjeto = new ObjectInputStream(cliente.getInputStream());
+            Numeros number = (Numeros) inObjeto.readObject();
 
-            numSalida.close();
-            cliente.close();
+            System.out.println("Recibo: " + number.getNumero() + " -> Cuadrado: " + number.getCuadrado() + ", Cubo: " + number.getCubo());
 
-            num = (new BufferedReader(new InputStreamReader(System.in)));
-            number = Integer.parseInt(String.valueOf(num));
+            outObjeto.close();
+            inObjeto.close();
+
+            numeros = new Numeros(Teclado.getNum("\nNúmero: "));
         }
 
+        cliente.close();
     }
 }
