@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="UT3 - SOCKETS: Ejemplo 2 del libro (páginas 139-140)">
-      <change afterPath="$PROJECT_DIR$/src/ejemplo3/UDPclienteEjemplo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo3/UDPservidorEjemplo2.java" afterDir="false" />
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="UT3 - SOCKETS: Ejemplo 3 del libro (páginas 141-142)">
+      <change afterPath="$PROJECT_DIR$/src/ejemplo4/MCcliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo4/MCservidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,8 @@
       <updated>1672341568109</updated>
       <workItem from="1672341569859" duration="875000" />
       <workItem from="1672343223164" duration="105000" />
-      <workItem from="1673278423368" duration="2650000" />
+      <workItem from="1673278423368" duration="2811000" />
+      <workItem from="1673863523573" duration="1210000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673280162832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UT3 - SOCKETS: Ejemplo 3 del libro (páginas 141-142)">
+      <created>1673281223042</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673281223042</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +180,7 @@
     <MESSAGE value="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)" />
     <MESSAGE value="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133) - Cambio de nombre del proyecto" />
     <MESSAGE value="UT3 - SOCKETS: Ejemplo 2 del libro (páginas 139-140)" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT3 - SOCKETS: Ejemplo 2 del libro (páginas 139-140)" />
+    <MESSAGE value="UT3 - SOCKETS: Ejemplo 3 del libro (páginas 141-142)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT3 - SOCKETS: Ejemplo 3 del libro (páginas 141-142)" />
   </component>
 </project>
