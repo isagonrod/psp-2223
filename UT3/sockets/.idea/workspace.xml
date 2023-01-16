@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="UT3 - SOCKETS: Ejemplo &quot;Envío de objetos a través de sockets (TCP)&quot;: págs. 147-148 del libro">
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/src/actividad_3_7/ClienteNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actividad_3_7/Numeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actividad_3_7/ServidorNumeros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +43,20 @@
     "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TCPObjetoCliente1">
+  <component name="RunManager" selected="Application.ClienteNumeros">
+    <configuration name="ClienteNumeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="actividad_3_7.ClienteNumeros" />
+      <module name="sockets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="actividad_3_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MCcliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo4.MCcliente" />
       <module name="sockets" />
@@ -54,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MCservidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemplo4.MCservidor" />
+    <configuration name="ServidorNumeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="actividad_3_7.ServidorNumeros" />
       <module name="sockets" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ejemplo4.*" />
+          <option name="PATTERN" value="actividad_3_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,26 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UDPclienteEjemplo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemplo3.UDPclienteEjemplo2" />
-      <module name="sockets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ejemplo3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClienteNumeros" />
+        <item itemvalue="Application.ServidorNumeros" />
         <item itemvalue="Application.TCPObjetoCliente1" />
         <item itemvalue="Application.TCPObjetoServidor1" />
         <item itemvalue="Application.MCcliente" />
-        <item itemvalue="Application.MCservidor" />
-        <item itemvalue="Application.UDPclienteEjemplo2" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +130,7 @@
       <workItem from="1672341569859" duration="875000" />
       <workItem from="1672343223164" duration="105000" />
       <workItem from="1673278423368" duration="2811000" />
-      <workItem from="1673863523573" duration="3239000" />
+      <workItem from="1673863523573" duration="7419000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -171,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673867162942</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changes">
+      <created>1673867638374</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673867638374</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +206,7 @@
     <MESSAGE value="UT3 - SOCKETS: Ejemplo 3 del libro (páginas 141-142)" />
     <MESSAGE value="UT3 - SOCKETS: Ejemplo Multicast (págs 144-145 del libro)" />
     <MESSAGE value="UT3 - SOCKETS: Ejemplo &quot;Envío de objetos a través de sockets (TCP)&quot;: págs. 147-148 del libro" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT3 - SOCKETS: Ejemplo &quot;Envío de objetos a través de sockets (TCP)&quot;: págs. 147-148 del libro" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>
