@@ -16,11 +16,13 @@ public class ServidorNumeros {
         System.out.println("Esperando al cliente...");
         Socket cliente = servidor.accept();
 
-        ObjectInputStream numEnt = new ObjectInputStream(cliente.getInputStream());
+        ObjectInputStream numEnt;
 
-        Numeros number = (Numeros) numEnt.readObject();
+        Numeros number = new Numeros(1);
 
         while (number.getNumero() > 0) {
+            numEnt = new ObjectInputStream(cliente.getInputStream());
+            number = (Numeros) numEnt.readObject();
             System.out.println("Recibo: " + number.getNumero());
 
             number.setCuadrado(Calculadora.calcularCuadrado(number.getNumero()));
@@ -30,10 +32,6 @@ public class ServidorNumeros {
             numSal.writeObject(number);
             System.out.println("Envío: " + number.getNumero() + " -> Cuadrado: " + number.getCuadrado() + ", Cubo: " + number.getCubo());
 
-            numEnt.close();
-            numSal.close();
-
-            number = (Numeros) numEnt.readObject();
         }
         cliente.close();
         servidor.close();

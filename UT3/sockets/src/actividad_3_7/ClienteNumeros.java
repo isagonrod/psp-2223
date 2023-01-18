@@ -13,11 +13,12 @@ public class ClienteNumeros {
         System.out.println("PROGRAMA CLIENTE INICIADO...");
         Socket cliente = new Socket(host, puerto);
 
-        ObjectOutputStream outObjeto = new ObjectOutputStream(cliente.getOutputStream());
+        ObjectOutputStream outObjeto;
 
         Numeros numeros = new Numeros(Teclado.getNum("\nNúmero: "));
 
         while (numeros.getNumero() > 0) {
+            outObjeto = new ObjectOutputStream(cliente.getOutputStream());
             outObjeto.writeObject(numeros);
             System.out.println("Envío: " + numeros.getNumero());
 
@@ -25,9 +26,6 @@ public class ClienteNumeros {
             Numeros number = (Numeros) inObjeto.readObject();
 
             System.out.println("Recibo: " + number.getNumero() + " -> Cuadrado: " + number.getCuadrado() + ", Cubo: " + number.getCubo());
-
-            outObjeto.close();
-            inObjeto.close();
 
             numeros = new Numeros(Teclado.getNum("\nNúmero: "));
         }

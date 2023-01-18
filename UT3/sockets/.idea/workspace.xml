@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="UT3 - SOCKETS: Actividad 3.8 - parte 1 (libro)">
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="*">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actividad_3_7/ClienteNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_7/ClienteNumeros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actividad_3_7/ServidorNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_7/ServidorNumeros.java" afterDir="false" />
@@ -133,7 +133,7 @@
       <workItem from="1673278423368" duration="2811000" />
       <workItem from="1673863523573" duration="13858000" />
       <workItem from="1673898104860" duration="8000" />
-      <workItem from="1674068406811" duration="336000" />
+      <workItem from="1674068406811" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673891662481</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="*">
+      <created>1674068860049</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674068860049</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +240,7 @@
     <MESSAGE value="changes" />
     <MESSAGE value="UT3 - SOCKETS: Actividad 3.7 (libro)" />
     <MESSAGE value="UT3 - SOCKETS: Actividad 3.8 - parte 1 (libro)" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT3 - SOCKETS: Actividad 3.8 - parte 1 (libro)" />
+    <MESSAGE value="*" />
+    <option name="LAST_COMMIT_MESSAGE" value="*" />
   </component>
 </project>
