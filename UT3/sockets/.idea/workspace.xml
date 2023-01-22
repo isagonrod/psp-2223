@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- no funciona al leer el segundo número">
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado">
+      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ClienteChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ComunHilos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo8/HiloServidorChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo7/JugadorAdivina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo7/JugadorAdivina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo7/ObjetoCompartido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo7/ObjetoCompartido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,32 +47,19 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "diff.base"
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.27701148",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.JugadorAdivina">
+  <component name="RunManager" selected="Application.ejemplo8.ClienteChat">
     <configuration name="Cliente" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo6.Cliente" />
       <module name="sockets" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ejemplo6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClienteNumeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="actividad_3_7.ClienteNumeros" />
-      <module name="sockets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="actividad_3_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,19 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Servidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemplo6.Servidor" />
-      <module name="sockets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ejemplo6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServidorAdivina" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo7.ServidorAdivina" />
       <module name="sockets" />
@@ -114,13 +93,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServidorChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo8.ServidorChat" />
+      <module name="sockets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejemplo8.ClienteChat" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo8.ClienteChat" />
+      <module name="sockets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ejemplo8.ClienteChat" />
+      <item itemvalue="Application.Cliente" />
+      <item itemvalue="Application.JugadorAdivina" />
+      <item itemvalue="Application.ServidorAdivina" />
+      <item itemvalue="Application.ServidorChat" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServidorChat" />
         <item itemvalue="Application.JugadorAdivina" />
         <item itemvalue="Application.ServidorAdivina" />
         <item itemvalue="Application.Cliente" />
-        <item itemvalue="Application.Servidor" />
-        <item itemvalue="Application.ClienteNumeros" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +150,7 @@
       <workItem from="1673898104860" duration="8000" />
       <workItem from="1674068406811" duration="1383000" />
       <workItem from="1674382502630" duration="11169000" />
-      <workItem from="1674402756159" duration="1474000" />
+      <workItem from="1674402756159" duration="6884000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -267,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674399497286</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado">
+      <created>1674404312655</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674404312655</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +321,8 @@
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8 del libro" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (juego de adivinar un número)" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- no funciona al leer el segundo número" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- no funciona al leer el segundo número" />
+    <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
