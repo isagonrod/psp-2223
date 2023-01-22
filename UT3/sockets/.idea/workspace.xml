@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado">
-      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ClienteChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ComunHilos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo8/HiloServidorChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" afterDir="false" />
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat -- no funciona)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejemplo8/ClienteChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo8/ClienteChat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,7 @@
       <workItem from="1673898104860" duration="8000" />
       <workItem from="1674068406811" duration="1383000" />
       <workItem from="1674382502630" duration="11169000" />
-      <workItem from="1674402756159" duration="6884000" />
+      <workItem from="1674402756159" duration="8316000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -285,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674404312655</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat -- no funciona)">
+      <created>1674409893336</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674409893336</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +326,8 @@
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (juego de adivinar un número)" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- no funciona al leer el segundo número" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (clase JugadorAdivina) -- arreglado" />
+    <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat -- no funciona)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat -- no funciona)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

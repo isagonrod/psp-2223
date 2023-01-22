@@ -68,15 +68,15 @@ public class ClienteChat extends JFrame implements ActionListener, Runnable {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == botonEnviar) { // Se pulsa "Enviar"
-            if (mensaje.getText().trim().length() == 0) {
-                String texto = nombre + " > " + mensaje.getText();
+            if (mensaje.getText().trim().length() == 0)
+                return;
 
-                try {
-                    mensaje.setText("");
-                    fsalida.writeUTF(texto);
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+            String texto = nombre + " > " + mensaje.getText();
+            try {
+                mensaje.setText("");
+                fsalida.writeUTF(texto);
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
         }
 
