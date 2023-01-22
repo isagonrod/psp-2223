@@ -34,12 +34,14 @@ public class Numeros implements Serializable {
     private long cubo;
 
     public Numeros(int numero, long cuadrado, long cubo) {
+        super();
         this.numero = numero;
         this.cuadrado = cuadrado;
         this.cubo = cubo;
     }
 
     public Numeros(int numero) {
+        super();
         this.numero = numero;
     }
 
