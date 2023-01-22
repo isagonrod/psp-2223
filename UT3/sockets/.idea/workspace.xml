@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejercicio 7 del libro (no solucionada la excepción que lanza, porque la solución dada en clase funciona peor que la hecha por mí)">
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejercicio 8 (parte 2 de rehacer el ejercicio 7 con sockets udp)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actividad_3_7/Numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_7/Numeros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actividad_3_8_part2/ClienteNumerosUDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_8_part2/ClienteNumerosUDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actividad_3_8_part2/ServidorNumerosUDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_8_part2/ServidorNumerosUDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actividad_3_7/ClienteNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_7/ClienteNumeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actividad_3_7/ServidorNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actividad_3_7/ServidorNumeros.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ClienteNumerosUDP">
+  <component name="RunManager" selected="Application.ClienteNumeros">
     <configuration name="ClienteNumeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="actividad_3_7.ClienteNumeros" />
       <module name="sockets" />
@@ -115,10 +114,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClienteNumerosUDP" />
-        <item itemvalue="Application.ServidorNumerosUDP" />
         <item itemvalue="Application.ClienteNumeros" />
         <item itemvalue="Application.ServidorNumeros" />
+        <item itemvalue="Application.ClienteNumerosUDP" />
+        <item itemvalue="Application.ServidorNumerosUDP" />
         <item itemvalue="Application.TCPObjetoCliente1" />
       </list>
     </recent_temporary>
@@ -137,7 +136,7 @@
       <workItem from="1673863523573" duration="13858000" />
       <workItem from="1673898104860" duration="8000" />
       <workItem from="1674068406811" duration="1383000" />
-      <workItem from="1674382502630" duration="3447000" />
+      <workItem from="1674382502630" duration="4484000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -230,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674384433095</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[UT3] SOCKETS: Ejercicio 8 (parte 2 de rehacer el ejercicio 7 con sockets udp)">
+      <created>1674386093543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674386093543</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +267,7 @@
     <MESSAGE value="*" />
     <MESSAGE value="[UT3] SOCKETS: Ejercicio 7 del libro (solo salta una EOFException en el Servidor cuando termina el programa, por lo demás funciona)" />
     <MESSAGE value="[UT3] SOCKETS: Ejercicio 7 del libro (no solucionada la excepción que lanza, porque la solución dada en clase funciona peor que la hecha por mí)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejercicio 7 del libro (no solucionada la excepción que lanza, porque la solución dada en clase funciona peor que la hecha por mí)" />
+    <MESSAGE value="[UT3] SOCKETS: Ejercicio 8 (parte 2 de rehacer el ejercicio 7 con sockets udp)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejercicio 8 (parte 2 de rehacer el ejercicio 7 con sockets udp)" />
   </component>
 </project>
