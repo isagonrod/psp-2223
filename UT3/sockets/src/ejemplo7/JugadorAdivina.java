@@ -57,8 +57,7 @@ public class JugadorAdivina {
             if (datos.isGana()) {
                 System.out.println("<<HAS GANADO!! EL JUEGO HA TERMINADO>>");
                 cadena = "*";
-            } else {
-                if (!datos.isJuega()) {
+            } else if (!datos.isJuega()) {
                     System.out.println("<<EL JUEGO HA TERMINADO, HAN ADIVINADO EL NÚMERO>>");
                     cadena = "*";
                 }
@@ -68,7 +67,6 @@ public class JugadorAdivina {
             fentrada.close();
             System.out.println("Fin de proceso...");
             cliente.close();
-        }
     }
 
     private static boolean validarCadena(String cadena) {

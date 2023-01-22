@@ -6,7 +6,7 @@ public class ObjetoCompartido {
     private int ganador; // jugador ganador
 
     public ObjetoCompartido(int numero) {
-        this.numero = numero;
+        this.numero = numero; // Número a adivinar
         this.acabo = false;
     }
 
