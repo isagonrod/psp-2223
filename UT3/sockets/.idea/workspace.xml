@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejercicio 7 (copiada solución de clase para tener ambas)">
-      <change afterPath="$PROJECT_DIR$/src/ejemplo6/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo6/HiloServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo6/Servidor.java" afterDir="false" />
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8 del libro">
+      <change afterPath="$PROJECT_DIR$/src/ejemplo7/Datos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo7/HiloServidorAdivina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo7/ObjetoCompartido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo7/ServidorAdivina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,7 @@
       <workItem from="1673863523573" duration="13858000" />
       <workItem from="1673898104860" duration="8000" />
       <workItem from="1674068406811" duration="1383000" />
-      <workItem from="1674382502630" duration="6665000" />
+      <workItem from="1674382502630" duration="9342000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
@@ -244,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674387138885</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[UT3] SOCKETS: Ejemplo punto 3.8 del libro">
+      <created>1674389661724</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674389661724</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +285,7 @@
     <MESSAGE value="[UT3] SOCKETS: Ejercicio 7 del libro (no solucionada la excepción que lanza, porque la solución dada en clase funciona peor que la hecha por mí)" />
     <MESSAGE value="[UT3] SOCKETS: Ejercicio 8 (parte 2 de rehacer el ejercicio 7 con sockets udp)" />
     <MESSAGE value="[UT3] SOCKETS: Ejercicio 7 (copiada solución de clase para tener ambas)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejercicio 7 (copiada solución de clase para tener ambas)" />
+    <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8 del libro" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8 del libro" />
   </component>
 </project>
