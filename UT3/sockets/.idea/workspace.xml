@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - añadido en comentarios parte para probarlo con otra ip que no sea 'localhost')">
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674415304670</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)">
+      <created>1674464008814</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674464008814</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +361,8 @@
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat -- no funciona)" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat)" />
     <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - añadido en comentarios parte para probarlo con otra ip que no sea 'localhost')" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - añadido en comentarios parte para probarlo con otra ip que no sea 'localhost')" />
+    <MESSAGE value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
