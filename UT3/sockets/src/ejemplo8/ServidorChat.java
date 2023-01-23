@@ -17,8 +17,6 @@ public class ServidorChat {
 
         while (comun.getConexiones() < MAXIMO) {
             Socket socket = new Socket();
-            /*String ip = "192.168.0.194";
-            socket = new Socket(ip, port);*/
             socket = server.accept(); // esperando clientes
 
             // Objeto compartido por los hilos
