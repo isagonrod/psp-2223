@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat)">
-      <change afterPath="$PROJECT_DIR$/src/ejemplo9/UDPMultiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo8/ServidorChat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +42,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/usuario/Escritorio/psp-2223/UT3/sockets",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27701148",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ejemplo9.UDPMultiChat">
+  <component name="RunManager" selected="Application.ServidorChat">
     <configuration name="Cliente" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo6.Cliente" />
       <module name="sockets" />
@@ -140,8 +142,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ejemplo9.UDPMultiChat" />
         <item itemvalue="Application.ServidorChat" />
+        <item itemvalue="Application.ejemplo9.UDPMultiChat" />
         <item itemvalue="Application.JugadorAdivina" />
         <item itemvalue="Application.ServidorAdivina" />
         <item itemvalue="Application.Cliente" />
@@ -164,6 +166,7 @@
       <workItem from="1674068406811" duration="1383000" />
       <workItem from="1674382502630" duration="11169000" />
       <workItem from="1674402756159" duration="10489000" />
+      <workItem from="1674458759171" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
