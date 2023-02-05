@@ -26,10 +26,10 @@ public class LectorDeComandos {
         String mensaje;
 
         if (comando.equalsIgnoreCase("libro")) {
-            mensaje = libros[(int)(Math.random()*5+1)];
+            mensaje = libros[(int)(Math.random()*5)];
         }
         else if (comando.equalsIgnoreCase("frase")) {
-            mensaje = frases[(int)(Math.random()*4+1)];
+            mensaje = frases[(int)(Math.random()*4)];
         }
         else if (comando.equalsIgnoreCase("exit")) {
             mensaje = "Cliente " + cliente + " saliendo";
