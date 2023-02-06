@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bb238c2-21fa-440c-95f7-367ad01f7c1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LectorDeComandos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LectorDeComandos.java" afterDir="false" />
-    </list>
+    <list default="true" id="2bb238c2-21fa-440c-95f7-367ad01f7c1c" name="Changes" comment="Correccion" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +24,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Cliente">
@@ -66,8 +61,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675625549737</updated>
-      <workItem from="1675625554047" duration="559000" />
+      <workItem from="1675625554047" duration="843000" />
     </task>
+    <task id="LOCAL-00001" summary="Correccion">
+      <created>1675626378573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675626378573</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correccion">
+      <created>1675626395230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675626395230</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correccion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion" />
   </component>
 </project>
