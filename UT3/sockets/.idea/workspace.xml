@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)">
-      <change beforePath="$PROJECT_DIR$/../../IsaGonzalez_PruebaSockets_PSP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsaGonzalez_PruebaSockets_PSP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="df53d8c2-38c7-4d51-a110-60f9e7870c69" name="Changes" comment="[UT3] SOCKETS: Ejemplo punto 3.8.1 del libro (chat TCP - prueba con otra ip como servidor)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,6 +164,7 @@
       <workItem from="1674402756159" duration="10489000" />
       <workItem from="1674458759171" duration="1770000" />
       <workItem from="1675626664959" duration="676000" />
+      <workItem from="1675705611593" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="UT3 - SOCKETS: Ejemplo 1 del libro (páginas 132-133)">
       <created>1672342436312</created>
