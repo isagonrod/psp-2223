@@ -24,7 +24,7 @@ public class ClienteSMTP3 {
         // datos del usuario y del servidor
         String server = "smtp.gmail.com";
         String username = "isabelmariagonzalezrodriguez@gmail.com";
-        String password = "MAirena_1985";
+        String password = "patata";
         int puerto = 587;
         String remitente = "isabelmariagonzalezrodriguez@gmail.com";
 
