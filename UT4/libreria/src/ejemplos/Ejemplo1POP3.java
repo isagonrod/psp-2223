@@ -3,6 +3,7 @@ package ejemplos;
 import org.apache.commons.net.pop3.POP3Client;
 import org.apache.commons.net.pop3.POP3MessageInfo;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
 import static com.sun.org.apache.xml.internal.serializer.utils.Utils.messages;
@@ -32,6 +33,7 @@ public class Ejemplo1POP3 {
                 }
 
                 recuperarMensajes(men, pop3);
+                recuperarCabeceras(men, pop3);
 
                 // nos deconectamos
                 pop3.logout();
@@ -53,6 +55,24 @@ public class Ejemplo1POP3 {
             System.out.println("Prueba de listUniqueIdentifier: ");
             POP3MessageInfo pmi = pop3.listUniqueIdentifier(i + 1); // un mensaje
             System.out.println("\tIdentificador: " + pmi.identifier + ", Number: " + pmi.number + ", Tamaño: " + pmi.size);
+        }
+    }
+
+    private static void recuperarCabeceras(POP3MessageInfo[] men, POP3Client pop3) throws IOException {
+        for (int i = 0; i < men.length; i++) {
+            System.out.println("Mensaje: " + (i + 1));
+            POP3MessageInfo msginfo = men[i]; // lista de mensajes
+
+            // solo recupera cabecera
+            System.out.println("Cabecera del mensaje: ");
+            BufferedReader reader = (BufferedReader) pop3.retrieveMessageTop(msginfo.number, 0);
+            String linea;
+
+            while((linea = reader.readLine()) != null) {
+                System.out.println(linea);
+            }
+
+            reader.close();
         }
     }
 }
