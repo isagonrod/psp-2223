@@ -30,6 +30,9 @@ public class Ejemplo1POP3 {
                 } else {
                     System.out.println("Nº de mensajes: " + men.length);
                 }
+
+                recuperarMensajes(men, pop3);
+
                 // nos deconectamos
                 pop3.logout();
             }
@@ -39,5 +42,17 @@ public class Ejemplo1POP3 {
             System.exit(1);
         }
         System.exit(0);
+    }
+
+    private static void recuperarMensajes(POP3MessageInfo[] men, POP3Client pop3) throws IOException {
+        for (int i = 0; i < men.length; i++) {
+            System.out.println("Mensaje: " + (i + 1));
+            POP3MessageInfo msginfo = men[i]; // lista de mensajes
+            System.out.println("Identificador: " + msginfo.identifier + ", Number: " + msginfo.number + ", Tamaño: " + msginfo.size);
+
+            System.out.println("Prueba de listUniqueIdentifier: ");
+            POP3MessageInfo pmi = pop3.listUniqueIdentifier(i + 1); // un mensaje
+            System.out.println("\tIdentificador: " + pmi.identifier + ", Number: " + pmi.number + ", Tamaño: " + pmi.size);
+        }
     }
 }
