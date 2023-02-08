@@ -10,6 +10,15 @@ public class Teclado {
         return sc.nextLine();
     }
 
+    public static String getLongString(String message) {
+        System.out.println(message);
+        String nextLine = "";
+        if (sc.nextLine().contains("*")) {
+            nextLine = sc.nextLine();
+        }
+        return nextLine;
+    }
+
     public static Integer getNumber(String message) {
         System.out.println(message);
         return sc.nextInt();
