@@ -13,8 +13,8 @@ public class Teclado {
     public static String getLongString(String message) {
         System.out.println(message);
         String nextLine = "";
-        if (sc.nextLine().contains("*")) {
-            nextLine = sc.nextLine();
+        while (!nextLine.contains("*")) {
+            nextLine += sc.nextLine();
         }
         return nextLine;
     }

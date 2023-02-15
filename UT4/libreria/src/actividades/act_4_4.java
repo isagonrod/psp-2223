@@ -39,15 +39,25 @@ public class act_4_4 {
         AuthenticatingSMTPClient client = new AuthenticatingSMTPClient();
 
         // datos del usuario y del servidor
-        String server = Teclado.getString("Introduce servidor SMTP: ");
+        /*String server = Teclado.getString("Introduce servidor SMTP: ");
         boolean negTLS = Boolean.parseBoolean(Teclado.getString("Necesita negociación TLS (S/N): "));
         String username = Teclado.getString("Introduce usuario: ");
         String password = Teclado.getString("Introduce password: ");
         int port = Teclado.getNumber("Introduce puerto: ");
+        Teclado.getString("------------"); //lolailo fix
         String emailRemit = Teclado.getString("Introduce correo del remitente: ");
         String emailDestin = Teclado.getString("Introduce correo destinatario: ");
         String asunto = Teclado.getString("Introduce asunto: ");
-        String message = Teclado.getLongString("Introduce mensaje, finalizará cuando se introduzca *: ");
+        String message = Teclado.getLongString("Introduce mensaje, finalizará cuando se introduzca *: ");*/
+        String server = "smtp.gmail.com";
+        boolean negTLS = false;
+        String username = "isabelmariagonzalezrodriguez@gmail.com";
+        String password = "";
+        int port = 25;
+        String emailRemit = "isabelmariagonzalezrodriguez@gmail.com";
+        String emailDestin = "miguelangelruizsanchez@gmail.com";
+        String asunto = "test";
+        String message = "lajuafedhufiusndfusnfviufnfiuafiucf\njijfdjjffnsfnfsfnjeknfkjf\njaufdnifnknfafnfaif";
 
         try {
             int respuesta;
