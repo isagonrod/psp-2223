@@ -4,6 +4,14 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.security.MessageDigest;
 
+/* ACTIVIDAD 5.2
+ * Ejecuta el 'Ejemplo5' para generar el fichero DATOS.DAT
+ * Después ejecuta el 'Ejemplo6'.
+ *
+ * Edita el fichero DATOS.DAT y cambia alguna letra, por ejemplo, donde hay una minúscula pon una mayúscula
+ * y prueba de nuevo el 'Ejemplo6' para ver la salida.
+ */
+
 public class Ejemplo6 {
     public static void main(String[] args) {
         try {
