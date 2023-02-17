@@ -1,9 +1,18 @@
-package ejemplos;
+package actividades;
 
+/* ACTIVIDAD 5.3
+ * Almacena las claves pública y privada en disco en los ficheros Clave.publica y Clave.privada respectivamente.
+ */
+
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.security.*;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.X509EncodedKeySpec;
 
-public class Ejemplo7 {
+public class act_5_3 {
     public static void main(String[] args) {
+
         try {
             KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA");
 
@@ -38,7 +47,22 @@ public class Ejemplo7 {
             } else {
                 System.out.println("FIRMA NO VERIFICADA");
             }
-        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException ex) {
+
+            PKCS8EncodedKeySpec pkcs8Spec = new PKCS8EncodedKeySpec(clavePrivada.getEncoded());
+
+            // Escribir a fichero binario la clave privada
+            FileOutputStream outpriv = new FileOutputStream("Clave.privada");
+            outpriv.write(pkcs8Spec.getEncoded());
+            outpriv.close();
+
+            X509EncodedKeySpec pkX509 = new X509EncodedKeySpec(clavePublica.getEncoded());
+
+            // Escribir a fichero binario la clave pública
+            FileOutputStream outpub = new FileOutputStream("Clave.publica");
+            outpub.write(pkX509.getEncoded());
+            outpub.close();
+
+        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException | IOException ex) {
             ex.printStackTrace();
         }
     }
