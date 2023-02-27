@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15c83493-2c23-489e-b089-01f3ab59ce49" name="Changes" comment="UT5 - Comunicaciones Seguras - Ejemplo 3 (funcionando)">
+    <list default="true" id="15c83493-2c23-489e-b089-01f3ab59ce49" name="Changes" comment="UT5 - Comunicaciones Seguras - Ejemplo 2 (funcionando)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo2/ClienteSSL2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo2/ClienteSSL2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo2/ServidorSSL2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo2/ServidorSSL2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,33 @@
       <recent name="D:\2022-2023_DAM\PSP\Repo_GitHub\psp-2223\UT5\comunicaciones_seguras\src\ejemplo2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ejemplo2.ServidorSSL2">
+  <component name="RunManager" selected="Application.ClienteSSL">
+    <configuration name="ClienteSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo1.ClienteSSL" />
+      <module name="comunicaciones_seguras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServidorSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo1.ServidorSSL" />
+      <module name="comunicaciones_seguras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ejemplo2.ClienteSSL2" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo2.ClienteSSL2" />
       <module name="comunicaciones_seguras" />
@@ -63,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ejemplo2.ServidorSSL2" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemplo2.ServidorSSL2" />
+    <configuration name="ejemplo3.ClienteSSL3" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo3.ClienteSSL3" />
       <module name="comunicaciones_seguras" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ejemplo2.*" />
+          <option name="PATTERN" value="ejemplo3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,13 +101,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ClienteSSL" />
+      <item itemvalue="Application.ServidorSSL" />
+      <item itemvalue="Application.ejemplo3.ClienteSSL3" />
       <item itemvalue="Application.ejemplo2.ClienteSSL2" />
-      <item itemvalue="Application.ejemplo2.ServidorSSL2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClienteSSL" />
+        <item itemvalue="Application.ServidorSSL" />
+        <item itemvalue="Application.ejemplo3.ClienteSSL3" />
         <item itemvalue="Application.ejemplo2.ClienteSSL2" />
-        <item itemvalue="Application.ejemplo2.ServidorSSL2" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677400221551</updated>
       <workItem from="1677400223184" duration="4611000" />
-      <workItem from="1677487216499" duration="2524000" />
+      <workItem from="1677487216499" duration="3139000" />
     </task>
     <task id="LOCAL-00001" summary="UT5 - Comunicaciones Seguras - Ejemplo 1: Se crean los almacenes y los certificados sin problema, pero al querer ejecutar el programa del cliente salta una Excepción, porque da un error al cerrar los streams y los sockets">
       <created>1677404646536</created>
@@ -112,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677489495221</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UT5 - Comunicaciones Seguras - Ejemplo 2 (funcionando)">
+      <created>1677489783996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677489783996</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +168,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UT5 - Comunicaciones Seguras - Ejemplo 1: Se crean los almacenes y los certificados sin problema, pero al querer ejecutar el programa del cliente salta una Excepción, porque da un error al cerrar los streams y los sockets" />
     <MESSAGE value="UT5 - Comunicaciones Seguras - Ejemplo 3 (funcionando)" />
-    <option name="LAST_COMMIT_MESSAGE" value="UT5 - Comunicaciones Seguras - Ejemplo 3 (funcionando)" />
+    <MESSAGE value="UT5 - Comunicaciones Seguras - Ejemplo 2 (funcionando)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT5 - Comunicaciones Seguras - Ejemplo 2 (funcionando)" />
   </component>
 </project>
