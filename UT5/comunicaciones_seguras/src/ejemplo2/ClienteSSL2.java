@@ -12,7 +12,6 @@ public class ClienteSSL2 {
 
         System.setProperty("javax.net.ssl.trustStore", "CliCertConfianza");
         System.setProperty("javax.net.ssl.trustStorePassword", "890123");
-        System.setProperty("javax.net.ssl.keyStore", "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src");
 
         System.out.println("PROGRAMA CLIENTE INICIADO...");
 

@@ -12,7 +12,6 @@ public class ServidorSSL2 {
 
         System.setProperty("javax.net.ssl.keyStore", "AlmacenSrv");
         System.setProperty("javax.net.ssl.keyStorePassword", "1234567");
-        System.setProperty("javax.net.ssl.keyStore", "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src");
 
         // Crear un socket servidor seguro
         SSLServerSocketFactory serverSocket = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
