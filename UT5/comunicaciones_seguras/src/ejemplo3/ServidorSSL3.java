@@ -10,10 +10,6 @@ public class ServidorSSL3 {
     public static void main(String[] args) throws Exception {
         int port = 6000;
 
-//        System.setProperty("javax.net.ssl.keyStore", "AlmacenSrv");
-//        System.setProperty("javax.net.ssl.keyStorePassword", "1234567");
-//        System.setProperty("javax.net.ssl.keyStore", "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src");
-
         // Definir el fichero almacén que contiene el certificado y la clave para acceder a él
         FileInputStream ficAlmacen = new FileInputStream("AlmacenSrv");
         String claveAlmacen = "1234567";

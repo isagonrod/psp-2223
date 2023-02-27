@@ -15,10 +15,6 @@ public class ClienteSSL3 {
 
         System.out.println("PROGRAMA CLIENTE INICIADO...");
 
-//        System.setProperty("javax.net.ssl.trustStore", "CliCertConfianza");
-//        System.setProperty("javax.net.ssl.trustStorePassword", "890123");
-//        System.setProperty("javax.net.ssl.keyStore", "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src");
-
         // Definir el fichero almacén que contiene el certificado de confianza y la clave para acceder a él
         FileInputStream ficCerConf = new FileInputStream("CliCertConfianza");
         String claveCerConf = "890123";
