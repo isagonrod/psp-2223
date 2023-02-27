@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15c83493-2c23-489e-b089-01f3ab59ce49" name="Changes" comment="UT5 - Comunicaciones Seguras - Ejemplo 1: Se crean los almacenes y los certificados sin problema, pero al querer ejecutar el programa del cliente salta una Excepción, porque da un error al cerrar los streams y los sockets">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo2/ClienteSSL2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejemplo2/ServidorSSL2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo1/ClienteSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo1/ClienteSSL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejemplo1/ServidorSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejemplo1/ServidorSSL.java" afterDir="false" />
+    <list default="true" id="15c83493-2c23-489e-b089-01f3ab59ce49" name="Changes" comment="UT5 - Comunicaciones Seguras - Ejemplo 1 y 2: Salta la siguiente excepción &quot;Exception in thread &quot;main&quot; java.net.SocketException: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)&quot; que no permite ejecutar los programas">
+      <change afterPath="$PROJECT_DIR$/src/ejemplo3/ClienteSSL3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejemplo3/ServidorSSL3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +39,36 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src/ejemplo2",
+    "last_opened_file_path": "D:/2022-2023_DAM/PSP/Repo_GitHub/psp-2223/UT5/comunicaciones_seguras/src/ejemplo3",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2022-2023_DAM\PSP\Repo_GitHub\psp-2223\UT5\comunicaciones_seguras\src\ejemplo3" />
       <recent name="D:\2022-2023_DAM\PSP\Repo_GitHub\psp-2223\UT5\comunicaciones_seguras\src\ejemplo2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServidorSSL2">
+  <component name="RunManager" selected="Application.ClienteSSL3">
     <configuration name="ClienteSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplo1.ClienteSSL" />
       <module name="comunicaciones_seguras" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ejemplo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteSSL3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo3.ClienteSSL3" />
+      <module name="comunicaciones_seguras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,8 +102,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServidorSSL3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplo3.ServidorSSL3" />
+      <module name="comunicaciones_seguras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejemplo3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClienteSSL3" />
+        <item itemvalue="Application.ServidorSSL3" />
         <item itemvalue="Application.ServidorSSL2" />
         <item itemvalue="Application.ClienteSSL" />
         <item itemvalue="Application.ServidorSSL" />
@@ -107,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677400221551</updated>
       <workItem from="1677400223184" duration="4611000" />
+      <workItem from="1677487216499" duration="2208000" />
     </task>
     <task id="LOCAL-00001" summary="UT5 - Comunicaciones Seguras - Ejemplo 1: Se crean los almacenes y los certificados sin problema, pero al querer ejecutar el programa del cliente salta una Excepción, porque da un error al cerrar los streams y los sockets">
       <created>1677404646536</created>
