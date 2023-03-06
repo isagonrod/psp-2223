@@ -18,6 +18,14 @@ public class ServidorSSL4 {
         KeyStore almacen = KeyStore.getInstance(KeyStore.getDefaultType());
         almacen.load(ficAlmacen, claveAlmacen.toCharArray());
 
+        // Definir el fichero almacén que contiene el certificado de confianza y la clave para acceder a él
+        FileInputStream ficCerConf = new FileInputStream("SrvCertConfianza");
+        String claveCerConf = "cercli";
+
+        // Cargar en un KeyStore el almacén de certificados de confianza
+        KeyStore almacenConf = KeyStore.getInstance(KeyStore.getDefaultType());
+        almacenConf.load(ficCerConf, claveCerConf.toCharArray());
+
         // Crear el gestor de claves a partir del objeto KeyStore e inicializarlo con la clave del almacén
         KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
         keyManagerFactory.init(almacen, claveAlmacen.toCharArray());

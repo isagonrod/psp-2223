@@ -23,6 +23,14 @@ public class ClienteSSL4 {
         KeyStore almacenConf = KeyStore.getInstance(KeyStore.getDefaultType());
         almacenConf.load(ficCerConf, claveCerConf.toCharArray());
 
+        // Definir el fichero almacén que contiene el certificado y la clave para acceder a él
+        FileInputStream ficAlmacen = new FileInputStream("AlmacenCli");
+        String claveAlmacen = "clavecli";
+
+        // Cargar en un KeyStore el almacén que contiene el certificado
+        KeyStore almacen = KeyStore.getInstance(KeyStore.getDefaultType());
+        almacen.load(ficAlmacen, claveAlmacen.toCharArray());
+
         // Crear el gestor de confianza a partir del objeto KeyStore e inicializarlo con la clave del almacén
         TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         trustManagerFactory.init(almacenConf);
